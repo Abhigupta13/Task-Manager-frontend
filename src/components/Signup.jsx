@@ -6,7 +6,7 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('')
   const [loading,setLoading]=useState(false)
-  const server_url= "http://localhost:3000"
+  const server_url= "https://task-manager-backend-nine.vercel.app"
   let history = useNavigate()
   const handleLogin = async (e) => {
     e.preventDefault();
