@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Circles } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-const server_url= "http://localhost:3000"
+const server_url= "https://task-manager-backend-nine.vercel.app"
 const Login = () => {
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(false);
