@@ -2,7 +2,7 @@
 // /* eslint-disable react/prop-types */
 import { useState } from "react";
 import TaskContext from "./TaskContext";
-const server_url= "https://task-manager-backend-nine.vercel.app"
+const server_url= "http://localhost:3000"
 const TaskState = (props) => {
   const initialTasks = []
   const [tasks, setTasks] = useState(initialTasks)

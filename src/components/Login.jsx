@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Circles } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-const server_url= "https://task-manager-backend-nine.vercel.app"
+const server_url= "http://localhost:3000"
 const Login = () => {
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(false);
@@ -50,7 +50,7 @@ const Login = () => {
       {!loading && <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h2 className="mt-6 text-center text-3xl font-semibold text-white">
+            <h2 className="mt-4 text-center text-4xl font-semibold text-white">
               Log in to your account
             </h2>
           </div>
@@ -67,7 +67,7 @@ const Login = () => {
                   required
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="appearance-none rounded-none relative block w-full mb-2 px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full mb-7 px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Username" />
               </div>
               <div>
@@ -90,7 +90,7 @@ const Login = () => {
                 className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Log in
               </button>
-              <div className='text-white text-sm m-2 text-center'>
+              <div className='text-white text-lg m-2 text-center'>
                 Don't have an account? <a className='underline cursor-pointer' onClick={() => (
                   history("/signup")
                 )}>Create Account</a>

@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import TaskContext from '../context/TaskContext';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Circles } from 'react-loader-spinner'
-const server_url= "https://task-manager-backend-nine.vercel.app"
+const server_url= "http://localhost:3000"
 
 const TaskUpdate = () => {
     let { id } = useParams()
